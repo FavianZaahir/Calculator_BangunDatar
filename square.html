@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set and Get Value Javascript</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+      count = () =>{
+        let sisi = document.getElementById('sisi').value;
+        let hasil = sisi * sisi;
+        document.getElementById('hasil').value = hasil;
+      }
+    </script>
+  </head>
+  <body>
+    <ul class="topnav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="balls.html">Balls</a></li>
+      <li><a href="belahketupat.html">BelahKetupat</a></li>
+      <li><a href="rectangle.html">Kotakpanjang</a></li>
+      <li><a class="active" href="square.html">Kotak biasa</a></li>
+      <li><a href="triangle.html">Segitiga</a></li>
+    </ul>
+
+
+    <div class="container">
+      <div class="card col-sm-4 pembola">
+        <div class="card-header">
+          <h4>Hitung Luas Persegi</h4>
+        </div>
+        <div class="card-body">
+          sisi
+          <input type="number" id="sisi" class="form-control">
+          <button type="button" class="btn btn-info btn-block"
+          onclick="count()">
+            Hitung
+          </button>
+          Hasil
+          <input type="text" id="hasil" class="form-control" readonly>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
