@@ -8,8 +8,9 @@
   <link rel="stylesheet" href="style\style.css">
   <script type="text/javascript">
     count = () =>{
-      let diameter2 = document.getElementById('diameter2').value;
-      let hasil = (diameter2 * diameter1)/2;
+      let panjang = document.getElementById('panjang').value;
+      let lebar = document.getElementById('lebar').value;
+      let hasil = panjang * lebar;
       document.getElementById('hasil').value = hasil;
     }
   </script>
@@ -17,23 +18,23 @@
 <body>
   <ul class="topnav">
     <li><a href="index.html">Home</a></li>
-    <li><a class="active" href="balls.html">Balls</a></li>
-    <li><a href="belahketupat.html">BelahKetupat</a></li>
-    <li><a href="rectangle.html">Kotakpanjang</a></li>
-    <li><a href="square.html">Kotak biasa</a></li>
+    <li><a href="balls.html">Lingkaran</a></li>
+    <li><a href="belahketupat.html">Belah Ketupat</a></li>
+    <li><a class="active" href="rectangle.html">Persegi Panjang</a></li>
+    <li><a href="square.html">Persegi</a></li>
     <li><a href="triangle.html">Segitiga</a></li>
   </ul>
 
   <div class="container">
     <div class="card col-sm-4 pembola">
       <div class="card-header">
-        <h4>Hitung Luas Belah Ketupat</h4>
+        <h4>Hitung Luas Persegi Panjang</h4>
       </div>
       <div class="card-body">
-        diameter 1
-        <input type="number" id="diameter1" class="form-control">
-          diameter 2
-          <input type="number" id="diameter2" class="form-control">
+        Panjang
+        <input type="number" id="panjang" class="form-control">
+          Lebar
+          <input type="number" id="lebar" class="form-control">
         <button type="button" class="btn btn-info btn-block" onclick="count()">
           Hitung
         </button>
